@@ -2,7 +2,6 @@ const express = require("express")
 
 const app = express()
 
-
 app.get('/item', (requisition, response) => {
   const id = requisition.query.id
 
@@ -22,11 +21,7 @@ app.listen(3000, () => console.log("Servidor está rodando"))
   [DELETE] => deleta o que foi solicitado
   [PATCH] => atualiza partes do que foi solicitado
   
-  const foo = [{
-    id: 1,
-    nome: "iago",
-    sobrenome: "jorge"
-  }]
+  const foo = [{ id: 1, nome: "iago", sobrenome: "jorge"}]
 
   GET foo
   [{ id: 1, nome: "iago" }]
